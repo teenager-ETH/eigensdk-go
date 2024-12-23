@@ -19,7 +19,7 @@ import (
 // We are using similar structure for saving bls keys as ethereum keystore
 // https://github.com/ethereum/go-ethereum/blob/master/accounts/keystore/key.go
 //
-// We are storing PubKey sepearately so that we can list the pubkey without
+// We are storing PubKey separately so that we can list the pubkey without
 // needing password to decrypt the private key
 type encryptedBLSKeyJSONV3 struct {
 	PubKey string              `json:"pubKey"`
